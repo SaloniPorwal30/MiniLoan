@@ -6,26 +6,6 @@
     font-size: 25px;
     font-weight: 500;
   }
-  // .main_section {
-  //   width: 100%;
-  //   // display: inline-flex;
-  //   height: 100%;
-  //   // display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-  // h4 {
-  //   border-bottom: 1.5px solid gray;
-  //   color: navy;
-  //   font-family: Times New Roman;
-  //   font-size: 25px;
-  //   font-weight: bold;
-  //   line-height: 24px;
-  //   padding: 5px;
-  //   text-align: center;
-  //   margin-top: 10px;
-  // }
 
   .form {
     label {
@@ -57,5 +37,16 @@
   }
   button:hover {
     background: #b33b06;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
 }

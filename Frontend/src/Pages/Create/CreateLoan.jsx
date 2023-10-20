@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { useFormik } from "formik";
 import { createLoanSchema } from "../../components/Schemas";
@@ -11,11 +11,10 @@ const initialValues = {
 };
 
 const CreateLoan = () => {
-  const [data, setData] = useState({
-    name: "",
-    amount: "",
-    term: "",
-  });
+  const inputRef = useRef(null);
+  const onWheel = () => {
+    inputRef.current.blur();
+  };
 
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
@@ -56,8 +55,10 @@ const CreateLoan = () => {
                   className="text"
                   type="number"
                   autoComplete="off"
-                  placeholder="Amount"
+                  placeholder="Enter your amount here"
                   name="amount"
+                  ref={inputRef}
+                  onWheel={onWheel}
                   value={values?.amount}
                   onChange={handleChange}
                   onBlur={handleBlur}

@@ -7,14 +7,12 @@ const Header = () => {
   return (
     <>
       <section className="navbar_wrapper">
-        <Navbar expand="lg" className="navbar_header" >
+        <Navbar expand="lg" className="navbar_header">
           <Container>
             <Navbar.Collapse className="navmenu">
               <Nav>
                 <NavLink className="nav_menu">
-                  <Link to="/"
-                  > MINI-LOAN
-                  </Link>
+                  <Link to="/"> MINI-LOAN</Link>
                 </NavLink>
                 <NavLink
                   className="nav_menu"
@@ -45,15 +43,6 @@ const Header = () => {
                 </NavLink>
                 <NavLink
                   className="nav_menu"
-                  to="/count"
-                  style={({ isActive }) => ({
-                    color: isActive ? "#f27e4c" : "#333333",
-                  })}
-                >
-                  Loan Count
-                </NavLink>
-                <NavLink
-                  className="nav_menu"
                   to="/repay"
                   style={({ isActive }) => ({
                     color: isActive ? "#f27e4c" : "#333333",
@@ -74,7 +63,7 @@ const Header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </section >
+      </section>
     </>
   );
 };
