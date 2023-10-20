@@ -1,0 +1,43 @@
+.navbar_wrapper {
+  .navbar_header {
+    padding: 16px 0px;
+
+    // img {
+    //   width: 70px;
+    // }
+    a {
+      color: navy;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    .navbar-nav {
+      gap: 25px;
+      .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+
+      .nav_menu {
+        font-size: 18px;
+        font-weight: 400;
+        margin: auto;
+        margin-top: 17px;
+        text-decoration: none;
+
+        &:hover {
+          color: #f27e4c;
+        }
+      }
+
+      .active {
+        color: #f27e4c;
+      }
+    }
+    .navmenu {
+      gap: 12px;
+      justify-content: space-between;
+    }
+  }
+}
