@@ -3,7 +3,7 @@ pragma solidity ^0.8.15;
 
 contract MiniLoan {
     address public admin;
-    uint256 totalRepaymentAmount;
+    uint256 public totalRepaymentAmount;
 
     //Enum
     enum LoanStatus {
