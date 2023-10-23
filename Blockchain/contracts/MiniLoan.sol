@@ -63,7 +63,7 @@ contract MiniLoan {
 
         loan.push(newLoan);
         for (uint256 i = 0; i < _weeklyRepaymentAmount; i++) {
-            uint256 repaymentDate = _startDate + i * 1 weeks;
+            //uint256 repaymentDate = _startDate + i * 1 weeks;
             uint256 repaymentAmount = _amount / _weeklyRepaymentAmount;
             newLoan.scheduledRepayments[i] = repaymentAmount;
         }
